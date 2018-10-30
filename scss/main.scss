@@ -41,15 +41,8 @@ ul {
 .contact {
   height: 80vh;
   .row {
-    border: 1px solid red;
     width: auto;
     height: 80vh;
-
-    .col-sm-6,
-    .col-md-7,
-    .col-lg-7 {
-      border: 1px solid green;
-    }
   }
 }
 // home
@@ -86,7 +79,6 @@ ul {
 .about {
   background-color: #00bcbc;
   .text-left {
-    border: 1px solid red;
     color: white;
     h1 {
       font-size: 4em;
@@ -114,7 +106,7 @@ ul {
     .row {
       .buttons {
         margin: 0 auto;
-        border: 1px solid red;
+
         box-sizing: border-box;
         height: 100%;
         button {
@@ -217,8 +209,10 @@ ul {
   }
 }
 // blog
+
 .blog {
   background-color: #b07cf7;
+  height: 100vh;
   h1 {
     color: white;
     font-weight: 900;
@@ -226,28 +220,70 @@ ul {
   p {
     color: white;
   }
-  .col-sm-12,
-  .col-md-12,
-  .col-lg-4 {
-    width: 20%;
-    height: 20%;
-    border: 1px solid red;
-  }
-  .blog-gallery {
-    width: 100%;
-    height: 70%;
-    border: 1px solid rebeccapurple;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
 
-    .blog-item {
-      width: 30%;
-      height: 70%;
-      border: 1px solid rebeccapurple;
-      flex-direction: column;
-      margin: 2%;
+  .container:nth-of-type(1) {
+    height: 20%;
+  }
+  .container:nth-of-type(2) {
+    width: 100%;
+    height: 50%;
+    .p-5 {
+      height: 95%;
+      width: 32%;
+      position: relative;
+      .date {
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 10%;
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        background-color: #00000080;
+
+        div {
+          color: white;
+          font-weight: 900;
+        }
+      }
+      .post-heading {
+        color: white;
+        font-weight: 900;
+        position: absolute;
+        bottom: 20%;
+      }
+      .post-author {
+        color: white;
+        position: absolute;
+        bottom: 0;
+      }
     }
+    .p-5:first-child {
+      background-image: url(../images/meal2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .p-5:nth-of-type(2) {
+      background-image: url(../images/meal3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .p-5:last-child {
+      background-image: url(../images/meal4.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  button {
+    background-color: #f84855;
+    color: white;
+  }
+  button:hover {
+    background-color: white;
+    color: #f84855;
   }
 }
 // contact
@@ -257,7 +293,26 @@ ul {
   background-size: cover;
   background-position: right;
   height: 80vh;
+  .container:nth-of-type(2) {
+    height: 66%;
+    .p-5:first-child {
+      height: 66%;
+      form {
+        height: 66%;
+        input,
+        textarea {
+          display: block;
+          width: 100%;
+          border: 0;
+          background-color: #00c4c499;
+          margin-top: 15px;
+          color: white;
+        }
+      }
+    }
+  }
 }
+//footer
 footer {
   width: 100%;
   height: 50px;
@@ -274,11 +329,10 @@ footer {
   .home,
   .about,
   .services,
-  .blog,
   .contact {
-    height: 80vh;
+    height: 100vh;
     .row {
-      height: 80vh;
+      height: 100vh;
     }
   }
   .gallery {
@@ -287,11 +341,97 @@ footer {
       height: 120vh;
     }
   }
+  .blog {
+    height: 180vh;
+
+    .container:nth-of-type(1) {
+      height: 21%;
+    }
+    .container:nth-of-type(2) {
+      width: 100%;
+      height: 70%;
+
+      .p-5 {
+        height: 30%;
+        width: 55%;
+        margin: 0;
+      }
+    }
+    .container:nth-of-type(3) {
+      height: 2%;
+    }
+  }
+  .contact {
+    height: 140vh;
+  }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 575px) {
+  .blog {
+    height: 180vh;
+
+    .container:nth-of-type(1) {
+      height: 17%;
+    }
+    .container:nth-of-type(2) {
+      width: 100%;
+      height: 79%;
+
+      .p-5 {
+        height: 30%;
+        width: 55%;
+        margin: 0;
+      }
+    }
+    .container::nth-of-type(3) {
+      height: 2%;
+    }
+  }
+  .contact {
+    height: 120vh;
+  }
 }
 
-// @media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .blog {
+    .container:nth-of-type(1) {
+      height: 25%;
+    }
+    .container:nth-of-type(2) {
+      width: 100%;
+      height: 68%;
 
-// @media only screen and (min-width: 768px) and (max-width: 1024px) {}
+      .p-5 {
+        height: 30%;
+        width: 55%;
+        margin: 0;
+      }
+    }
+    .container:nth-of-type(3) {
+      height: 2%;
+    }
+  }
+  .contact {
+    height: 103vh;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1224px) {
+  .blog {
+    height: 100vh;
+    .container:nth-of-type(1) {
+      height: 20%;
+    }
+    .container:nth-of-type(2) {
+      width: 100%;
+      height: 50%;
+      .p-5 {
+        height: 70%;
+        width: 32%;
+      }
+    }
+  }
+  .contact {
+    height: 60vh;
+  }
+}
