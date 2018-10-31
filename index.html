@@ -51,7 +51,7 @@
             </div>
         </nav>
 
-        <div id="home">
+        <section id="home">
             <div class="container-fluid home">
                 <div class="container">
                     <div class="row">
@@ -72,8 +72,8 @@
 
                 </div>
             </div>
-        </div>
-        <div id="about">
+        </section>
+        <section id="about">
             <div class="container-fluid about">
                 <div class="container">
                     <div class="row">
@@ -97,8 +97,8 @@
 
                 </div>
             </div>
-        </div>
-        <div id="serivces">
+        </section>
+        <section id="serivces">
             <div class="container-fluid serivces">
                 <div class="container">
                     <div class="row">
@@ -132,28 +132,84 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="gallery">
+        </section>
+        <!-- <div id="gallery">
             <div class="container-fluid gallery">
                 <div class="container">
-                    <div class="row">
-                        <div class=" col-sm-12 col-md-12 col-lg-12 gallery-header text-center">
-
+                    <div class="d-flex p-3  text-center">
+                        <div>
                             <h1>Gallery</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente totam
-                                exercitationem distinctio rerum libero odio enim nihil.
-                                Doloremque atque illum laborum debitis quia est eaque id pariatur ab nesciunt.
+                            <p>Lorem ipsumclass="col-xs-12 col-md-8" dolor sit amet consectetur adipisicing elit. Nobis
+                                sapiente totam
+                                exercitaticlass="col-xs-12 col-md-8"onem distinctio rerum libero odio enim nihil.
+                                Doloremque atque illum laborum
+                                debitis quclass="col-xs-12 col-md-8"ia est eaque id pariatur ab nesciunt.
                             </p>
-
                         </div>
-
-
                     </div>
 
                 </div>
+                <div class="container d-flex  flex-wrap align-self-center first-pictures">
+
+                    <div class="p-5  mr-1 mt-1 flex-grow-1 bg-secondary">
+
+
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="d-flex flex-column">
+                            <div class="p-3 mt-1 bg-primary">Flex item 1</div>
+                            <div class="p-3  mt-1 bg-primary">Flex item 2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container d-flex  flex-wrap align-self-center last-pictures">
+                    <div class="p-5  mr-1 mt-1 flex-grow-1 bg-secondary">
+                    </div>
+                    <div class="p-5 mr-1 mt-1 flex-grow-1 bg-secondary">
+                    </div>
+                </div>
+                <div class=" container text-center justify-content-center">
+                    <button type="button" class="btn mr-1 mt-1 ">VIEW MORE</button>
+                </div>
             </div>
-        </div>
-        <div class="container-fluid subscribe">
+        </div> -->
+        <section id="gallery">
+            <div class="container-fluid gallery">
+                <div class="container">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-xs-12 col-md-7">
+                            <h1>Gallery</h1>
+                            <p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua.
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea
+                                commodo
+                                consequat.
+                            </p>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <img src="images/meal5.jpg">
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <img src="images/meal6.jpg">
+                            <img src="images/meal7.jpg">
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <img src="images/meal8.jpg">
+                        </div>
+                        <div class="col-xs-12 col-md-6 ">
+                            <img src="images/meal9.jpg">
+                        </div>
+                        <div class="col-xs-6 col-md-4 col-lg-3">
+                            <button class="button-gallery">
+                                <a href="#">View more</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid subscribe">
             <div class="container">
                 <div class="row">
                     <div class=" col-sm-12 col-md-12 col-lg-12 text-left">
@@ -170,15 +226,16 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="blog">
+        </section>
+        <section id="blog">
             <div class="container-fluid blog">
                 <div class="container">
                     <div class="d-flex p-3  text-center">
                         <div>
                             <h1>Blog</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sapiente totam
-                                exercitationem distinctio rerum libero odio enim nihil. Doloremque atque illum laborum
+                                exercitationem distinctio rerum libero odio enim nihil. Doloremque atque illum
+                                laborum
                                 debitis quia est eaque id pariatur ab nesciunt.
                             </p>
                         </div>
@@ -222,13 +279,13 @@
                     <button type="button" class="btn mr-1 mt-1 ">VIEW MORE</button>
                 </div>
             </div>
-        </div>
-        <div id="contact">
+        </section>
+        <section id="contact">
             <div class="container-fluid contact">
                 <div class="container">
                     <div class="d-flex p-3  text-center">
-                        <div>
-                            <h1>contact</h1>
+                        <div class="contact-heading">
+                            <h1>Contact</h1>
                             <p>For new projects, ideas, business or anything
                                 youd like to discuss, contact with me!
                             </p>
@@ -249,14 +306,14 @@
                         <h5>ADDRESS</h5>
                         <span>123 City name, Street, Country</span>
                         <h5>EMAIL</h5>
-                        <span>cahee@domain.com</span>
+                        <a href="mailto:cahee@domain.com">cahee@domain.com</a>
                         <h5>PHONE</h5>
-                        <span>+012 345 6789</span>
+                        <a href="tel:+012 345 6789">+012 345 6789</a>
                     </div>
                 </div>
 
             </div>
-        </div>
+        </section>
         <footer class="d-flex justify-content-around">
             <p> 2018 Company. All right reserved.</p>
             <p> Cahee</p>
@@ -264,9 +321,6 @@
 
         </footer>
     </div>
-
-
-
 
 </body>
 

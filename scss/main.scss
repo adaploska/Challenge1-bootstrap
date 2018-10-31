@@ -9,7 +9,9 @@
   color: #262626;
   font-size: 16px;
 }
-
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7);
+}
 nav li::before {
   content: "";
   display: block;
@@ -36,10 +38,9 @@ ul {
 .home,
 .about,
 .serivces,
-.gallery,
 .blog,
 .contact {
-  height: 80vh;
+  height: 100vh;
   .row {
     width: auto;
     height: 80vh;
@@ -48,7 +49,6 @@ ul {
 // home
 .home {
   background-image: url(../images/header_bg.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -110,9 +110,9 @@ ul {
         box-sizing: border-box;
         height: 100%;
         button {
-          width: 70%;
-          height: 18%;
-          margin-top: 4px;
+          width: 62%;
+          height: 14%;
+          margin-top: 2%;
           font-size: 115%;
           img {
             width: auto;
@@ -124,6 +124,7 @@ ul {
       }
     }
   }
+
   .image-tomato {
     background-image: url(../images/tomato.png);
     background-repeat: no-repeat;
@@ -143,24 +144,27 @@ ul {
 //gallery
 .gallery {
   background-color: #ffe92f;
-  height: 130vh;
-  .row {
-    height: 130vh;
-    .gallery-pictures {
+  .col-xs-12,
+  .col-md-8 {
+    img {
       width: 100%;
-      height: 79%;
-      border: 1px solid red;
-      .gallery-items {
-        float: left;
-        width: 20%;
-        height: 31%;
-        margin: 1%;
-        border: 1px solid red;
-        &:first-child {
-          width: 55%;
-          height: 65%;
-        }
-      }
+      height: 100%;
+      padding-bottom: 20px;
+    }
+  }
+  .col-xs-12,
+  .col-md-4 {
+    img {
+      width: 100%;
+      height: 100%;
+      padding-bottom: 20px;
+    }
+  }
+  .col-xs-12,
+  .col-md-6 {
+    img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -293,8 +297,12 @@ ul {
   background-size: cover;
   background-position: right;
   height: 80vh;
+
   .container:nth-of-type(2) {
     height: 66%;
+    .contact-heading {
+      margin-left: 10%;
+    }
     .p-5:first-child {
       height: 66%;
       form {
@@ -326,23 +334,19 @@ footer {
 //mixin
 
 @media only screen and (max-width: 480px) {
-  .home,
   .about,
   .services,
-  .contact {
+  .contact,
+  .home,
+  .subscribe {
     height: 100vh;
     .row {
       height: 100vh;
     }
   }
-  .gallery {
-    height: 120vh;
-    .row {
-      height: 120vh;
-    }
-  }
+
   .blog {
-    height: 180vh;
+    height: 100vh;
 
     .container:nth-of-type(1) {
       height: 21%;
@@ -393,6 +397,32 @@ footer {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .about {
+    .text-left {
+      h1 {
+        font-size: 3em;
+      }
+    }
+  }
+  .serivces {
+    .container {
+      .row {
+        .buttons {
+          padding-top: 20%;
+          button {
+            width: 99%;
+            height: 18%;
+          }
+        }
+      }
+    }
+    .image-tomato {
+      h1 {
+        top: 40%;
+      }
+    }
+  }
+
   .blog {
     .container:nth-of-type(1) {
       height: 25%;
@@ -417,6 +447,25 @@ footer {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1224px) {
+  .serivces {
+    .container {
+      .row {
+        .buttons {
+          padding-top: 20%;
+          button {
+            width: 99%;
+            height: 18%;
+          }
+        }
+      }
+    }
+    .image-tomato {
+      h1 {
+        top: 40%;
+      }
+    }
+  }
+
   .blog {
     height: 100vh;
     .container:nth-of-type(1) {
@@ -433,5 +482,8 @@ footer {
   }
   .contact {
     height: 60vh;
+  }
+  .gallery {
+    height: 100vh;
   }
 }
