@@ -9,6 +9,7 @@
   color: #262626;
   font-size: 16px;
 }
+//navigation
 .navbar {
   background-color: rgba(255, 255, 255, 0.7);
 }
@@ -33,6 +34,10 @@ nav li a {
 }
 ul {
   padding: 1%;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
 }
 //all container
 .home,
@@ -69,6 +74,11 @@ ul {
       .btn {
         background-color: #ff6033;
         color: white;
+        box-shadow: 0px 5px 10px -2px #000000bf;
+      }
+      .btn:hover {
+        background-color: white;
+        color: #ff6033;
       }
     }
   }
@@ -167,6 +177,17 @@ ul {
       height: 100%;
     }
   }
+  .button-gallery {
+    background-color: #5585a2;
+    color: white;
+    margin-bottom: 3%;
+    font-size: 20px;
+    box-shadow: 0px 5px 10px -2px #000000bf;
+  }
+  .button-gallery:hover {
+    background-color: white;
+    color: #5585a2;
+  }
 }
 
 .subscribe {
@@ -194,7 +215,6 @@ ul {
         input {
           margin-top: 5%;
           width: 50%;
-
           box-shadow: 0px 5px 10px -2px #000000bf;
           outline: none;
         }
@@ -205,7 +225,6 @@ ul {
         }
         button:hover {
           background-color: white;
-          box-shadow: 0px 5px 10px -2px #000000bf;
           color: #96b92c;
         }
       }
@@ -244,7 +263,6 @@ ul {
         top: 5%;
         left: 10%;
         background-color: #00000080;
-
         div {
           color: white;
           font-weight: 900;
@@ -284,6 +302,7 @@ ul {
   button {
     background-color: #f84855;
     color: white;
+    box-shadow: 0px 5px 10px -2px #000000bf;
   }
   button:hover {
     background-color: white;
@@ -482,8 +501,5 @@ footer {
   }
   .contact {
     height: 60vh;
-  }
-  .gallery {
-    height: 100vh;
   }
 }
